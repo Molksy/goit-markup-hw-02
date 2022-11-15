@@ -22,6 +22,7 @@ address - roboto 400
     --title-text-color:#212121;
     --main-text-color:#757575;
     --white-color:#ffffff;
+    --button-bcgcolor:#F5F4FA;
 }
 
 /* global selectors */
@@ -32,6 +33,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    background-color: var(--white-color);
 }
 
 
@@ -61,7 +63,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:var(--main-text-color);
+    color:var(--title-text-color);
     text-decoration: none;
 }        
 .none-decoration {
@@ -73,6 +75,11 @@ body {
 .nav-li:focus {
     color: var(--accent-text-color);
 }
+
+.nav .nav-li.current{
+    color: var(--accent-text-color)
+}
+
             /* hero */
 .hero-header {
     font-weight: 900;
@@ -91,8 +98,8 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color:var(--white-color);
-    background: #2196F3;
+    color:var(--title-text-color);
+    background:var(--button-bcgcolor);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -100,8 +107,8 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-    color:var(--logo-text-color);
-    background-color: var(--white-color);
+    color:var(--white-color);
+    background-color: var(--accent-text-color);
 }
 /* Our benefits */
 
@@ -164,8 +171,8 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color:var(--white-color);
-    background: #2196F3;
+    color:var(--title-text-color);
+    background:var(--button-bcgcolor);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
@@ -183,4 +190,10 @@ body {
     font-size: 16px;
     line-height: 1.88;
     color:var(--main-text-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    color:var(--white-color);
+    background-color: var(--accent-text-color);
 }
